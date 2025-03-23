@@ -1,0 +1,126 @@
+ body
+ {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    background-color: bisque;
+    
+
+ }
+ header
+ {
+    text-align: center;
+    font-size:50px;
+    background-color: rgb(196, 119, 20);
+ }
+
+ .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    margin-top: 20px;
+    
+}
+.form
+{
+    border: 2px solid black;
+    width:500px;
+    height: 400px;
+    background-color:rgb(151, 53, 29);
+    border-radius:  25px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.233);
+    box-decoration-break: clone;
+}
+#fname
+{
+    margin: 30px 20px 20px;
+    cursor: pointer; /* Pointer/hand icon */
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+
+}
+#fname:hover
+{
+    background-color: black;
+    color:white
+}
+#lname
+{
+    margin: 10px 20px 20px;
+    cursor: pointer; /* Pointer/hand icon */
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+#lname:hover
+{
+    background-color: black;
+    color:white;
+}
+
+#lab
+{
+    margin: 10px 20px 20px;
+    text-decoration: underline;
+}
+#bday
+{
+    margin: 10px 20px 20px;
+    transition: background-color 0.3s ;
+    transition: color 0.3s;
+}
+#bday:hover
+{
+    background-color: black;
+    color: white;
+}
+#pass
+{
+    margin: 10px 20px 20px;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+#pass:hover
+{
+    background-color: black;
+    color: white;
+}
+button
+{
+    margin: 50px 200px 10px;
+    background-color:rgb(255, 255, 255) ;
+    cursor: pointer; /* Pointer/hand icon */
+    transition: background-color 0.3s;
+    transition: ease-in-out 1s;
+   
+}
+button 
+{
+    text-decoration: none;
+    color:rgb(212, 142, 11);
+}
+
+button:hover
+{
+    
+    background-color: brown;
+    color:yellow;
+}
+
+#ma 
+{
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+}
+.abroad
+{
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+.abroad:hover
+{
+    background-color: black;
+    color: white;
+}

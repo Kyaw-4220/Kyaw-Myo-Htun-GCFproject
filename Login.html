@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <header>Login</header>
+    <section class="container">
+    <form  class="form">
+        
+        <input type="text " placeholder="First Name" id="fname"><br>
+
+        <input type="text" placeholder="Last Name" id="lname"><br>
+
+        <label for="bday" id="lab">Age</label><br>
+        <input type="number" id="bday" ><br>
+
+        <input type="password" placeholder="Enter your password" id="pass" ><br>
+        
+        <input id="ma" type="radio" name="gen" value="Male">
+        <label for="male">Male</label>
+        
+        <input id="ma" type="radio" name="gen" value="Female">
+        <label for="female">Female</label><br>
+        
+        <label for="" id="ma" class="count">Country :</label>
+        <select name="Country" class="abroad">
+            <option selected>Select</option>
+            <option value="Myanmar">Myanmar</option>
+            <option value="India">India</option>
+            <option value="Butan">Butan</option>
+            <option value="Nepaul">Nepaul</option>
+        </select><br>
+        
+        <input type="checkbox" id="ma">
+        <label for="">Please agree our term and condition</label>
+
+        <button type="submit" id="submit" >
+           Click Here
+            </button>
+    
+    </form>
+    </section>
+    <script>
+       document.getElementById("submit").onclick=function(){
+        
+        let fname= document.getElementById("fname").value;
+        let lname= document.getElementById("lname").value;
+        let age= document.getElementById("bday").value;
+        let password= document.getElementById("pass").value;
+        let Country= document.getElementsByClassName("abroad").value;
+        let valid=true;     
+        if (fname =="" || lname =="") {
+            alert("Check again please")
+            valid= false;
+        }
+        if(age <18 || age>100){
+            alert("Check your age please")
+            valid= false;
+        } 
+        if(password<6)
+        {
+            alert("password should be more than 6 character")
+            valid=false;
+        }
+        if(Country === "Select")
+        {
+            alert("Select your country")
+            valid=false;
+        }
+        if(valid)  
+        {
+            alert(` first name: ${fname} \n last name: ${lname} \n${age} year old`)
+        }
+       
+    }
+       
+    </script>
+    
+</body>
+</html>
